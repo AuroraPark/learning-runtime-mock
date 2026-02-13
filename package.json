@@ -1,0 +1,29 @@
+{
+  "name": "learning-runtime-mock",
+  "version": "1.0.0",
+  "description": "Mock AI Learning Runtime server that evaluates feature flags before enabling features",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts"
+  },
+  "keywords": [
+    "express",
+    "typescript",
+    "feature-flags",
+    "mock-server"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.8.2",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.7.3"
+  }
+}

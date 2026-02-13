@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: learning-runtime-mock
+    runtime: node
+    plan: free
+    rootDir: .
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: FEATURE_FLAG_API_URL
+        sync: false
+      - key: API_KEY
+        sync: false
+      - key: LKG_MAX_AGE_MS
+        value: 300000
